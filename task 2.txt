@@ -1,0 +1,32 @@
+# DecodeLabs Data Analytics Internship - Project 2: Exploratory Data Analysis (EDA)
+
+## 📌 Project Overview
+With a clean, verified dataset established in Project 1, Phase 2 shifts the focus toward **Exploratory Data Analysis (EDA)**. The objective here is to apply statistical logic to uncover trends, analyze categorical distributions, track chronological patterns, and understand the "shape" of our transactional data using the **IPO (Input-Process-Output) Framework**.
+
+---
+
+## 📊 Descriptive Statistics & Visual Discoveries
+
+A dedicated EDA Report View was constructed in Power BI to analyze the system variables:
+
+### 1. Locating the Center of Gravity (Measures of Central Tendency)
+To understand our pricing structures, we isolated the distribution of financial metrics using distinct aggregations:
+* **Total Transactions (Count):** `1,185` unique orders processed.
+* **Unit Price Baseline:** * **Mean (Average):** `$465.34`
+  * **Median (The Middle):** `$459.73`
+* **Total Revenue Distribution:**
+  * **Mean (Average Order Value):** `$1,418.59`
+  * **Median Order Value:** `$1,184.28`
+
+**Statistical Takeaway:** The fact that the Mean Total Price is larger than the Median Total Price confirms a **Right-Skewed Distribution**. The average is being pulled upward by a small group of high-value bulk purchases, whereas a typical standalone transaction sits closer to the median.
+
+### 2. Categorical Distribution Analysis (Univariate Breakdown)
+* **Product Demand:** Analysed the dataset to isolate which inventory categories drive volume versus those driving pure financial margin.
+* **Acquisition Funnels:** Visualized revenue metrics across `ReferralSource` (Instagram, Facebook, Email, Referral) to evaluate marketing channel ROI.
+* **Operational Performance:** Segmented transactions by `OrderStatus` (Shipped, Delivered, Cancelled, Returned) to observe fulfillment friction.
+
+### 3. Chronological Time-Series Analysis
+* Projected sales timelines across the calendar year using an aggregate trend line (`Date` vs. `TotalPrice`). 
+* This structural breakdown highlights clear seasonal demand spikes and specific low-volume periods, giving leadership historical patterns to forecast inventory requirements.
+
+---
